@@ -59,7 +59,7 @@ def hangman():
     print(f"You have {len(RANDWORD)} lives, good luck :D")
     print("".join(correct_guesses).capitalize())
 
-    print(RANDWORD) #TODO remove
+
     lives = livescheck(correct_guesses, RANDWORD, randList)
     while lives > 0 and correct_guesses != randList:
         guessed_character = guess()
